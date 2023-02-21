@@ -1,0 +1,75 @@
+diffusion:
+  unet:
+    target: dally.src.guided_diffusion.unet.UNetModel
+    params:
+      image_size: 32
+      in_channels: 3 
+      model_channels: 128
+      out_channels: 3
+      num_res_blocks: 3
+      attention_resolutions: [2, 4]
+      use_scale_shift_norm: True
+      channel_mult: [1, 2, 2, 2]
+      resblock_updown: True
+      num_heads: 4
+      dropout: 0.3
+      learned_sinusoidal_pos_emb: True
+      cond_on_vec: True
+      dim_vec: 6
+
+  sampler:
+    target: dally.src.sampler.Sampler
+    dynamic_thresholding: False
+
+  generator: 
+    target: dally.src.imagen.generator.ImagenGenerator
+    params: 
+      condition_on_text: False
+      learned_variance: False
+      beta_schedule: linear
+      scheduler: cont
+  ema:
+    target: dally.src.ema.EMA
+    params:
+      beta: 0.999
+
+data:
+  train_dataset:
+    target: torchvision.datasets.CIFAR10
+
+optimizer:
+  target: torch.optim.AdamW
+  params:
+    lr: 0.0008
+
+scheduler:
+  target: torch.optim.lr_scheduler.CosineAnnealingLR
+  params:
+    T_max: 100000
+
+warmup:
+  target: pytorch_warmup.LinearWarmup
+  params:
+    warmup_period: 1000
+
+trainer:
+  amp: True
+  amp_dtype : float16
+  max_training_steps: 100000
+  report_metrics_every: 1
+  eval_every: 10
+  eval_after: 10
+  save_every: 4000
+  max_grad_norm: 5.0
+  batch_size: 256
+  checkpoint_dir: cifar10_states
+  log_dir: cifar10_logs
+  debug: False
+  augment: True
+  augment_dim: 6
+  equivariance_loss: 0
+  betas_ema: [0.995, 0.997, 0.999]
+  eval_algo: heun
+  eval_num_timesteps: 100
+  final_eval_algo: heun
+  final_eval_num_timesteps: 200
