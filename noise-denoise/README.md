@@ -9,18 +9,7 @@ puts markdown.to_html
 ```
 ## Real-world example. Try it yourself! ##
 
-| ![dan](pictures/dan2.jpg) | ![Sad](pictures/sad.jpg)|
-|:--:| :--:|
-| *Real Dan* |*Sad Dan*|
+| ![dan](pictures/dan2.jpg) | ![Sad](pictures/sad.jpg)|![Happy](pictures/happy.jpg) |
+|:--:| :--:|:--:|
+| *Real Dan* |*A photo of a young sad man*|*A photo of a young happy man*|
 
-<p align="center">
-  <img alt="Light" src="pictures/dan2.jpg" width="25%">
-  <em>image_caption</em>
-</p>
-<p>
-  &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Light" src="pictures/sad.jpg" width="25%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="pictures/happy.jpg" width="25%">
-</p>
-<em>image_caption</em>
