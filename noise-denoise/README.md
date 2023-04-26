@@ -1,5 +1,13 @@
 ## The MOST exciting and accurate zero-shot classification algorithm from the project! ##
 
+Implementation of the noise-denoise zero-shot classification algorithm. It is so easy and fun to use! That is how:
+
+```bash
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 <p align="center">
   <img alt="Light" src="pictures/sad.jpg" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
