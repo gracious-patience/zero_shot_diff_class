@@ -1,11 +1,10 @@
 ## The MOST exciting and accurate zero-shot classification algorithm from the project! ##
 
 Implementation of the noise-denoise zero-shot classification algorithm. It is so easy and fun to use! That is how:
+to use as a CLI-app: put a picture you'd like to classify into the [./pictures](./pictures) folder and simply enter this in your command line:
 
 ```bash
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+python CLASSIFY.py
 ```
 ## Real-world example. Try it yourself! ##
 
