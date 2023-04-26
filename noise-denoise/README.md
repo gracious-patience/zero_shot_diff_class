@@ -1,3 +1,7 @@
 ## The MOST exciting and accurate zero-shot classification algorithm from the project! ##
 
-![alt-text-1](pictures/sad.jpg "title-1") ![alt-text-2](pictures/happy.jpg "title-2")
+<p align="center">
+  <img alt="Light" src="pictures/sad.jpg" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="pictures/happy.jpg" width="45%">
+</p>
