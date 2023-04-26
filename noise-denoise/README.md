@@ -7,9 +7,11 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+## Real-world example. Try it yourself! ##
 
 <p align="center">
   <img alt="Light" src="pictures/dan2.jpg" width="25%">
+  <em>image_caption</em>
   &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Light" src="pictures/sad.jpg" width="25%">
 &nbsp; &nbsp; &nbsp; &nbsp;
