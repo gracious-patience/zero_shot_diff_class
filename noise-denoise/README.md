@@ -9,6 +9,8 @@ puts markdown.to_html
 ```
 ## Real-world example. Try it yourself! ##
 
+In all cases diffusion model successfully classified Dan. In the cases of glasses CLIP missclassified him.
+
 | ![dan](pictures/dan.jpg) | ![Sad](pictures/sad.jpg)|![Happy](pictures/happy.jpg) |
 |:--:| :--:|:--:|
 | *Real Dan* |*A photo of a sad young man*|*A photo of a happy young man*|
