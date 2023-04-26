@@ -9,9 +9,9 @@ puts markdown.to_html
 ```
 
 <p align="center">
-  <img alt="Light" src="pictures/dan2.jpg" width="33%">
+  <img alt="Light" src="pictures/dan2.jpg" width="25%">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Light" src="pictures/sad.jpg" width="33%">
+  <img alt="Light" src="pictures/sad.jpg" width="25%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="pictures/happy.jpg" width="33%">
+  <img alt="Dark" src="pictures/happy.jpg" width="25%">
 </p>
